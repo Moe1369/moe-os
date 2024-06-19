@@ -13,8 +13,6 @@ modules:
     install:
        - klassy
        - kde-material-you-colors
-       - python-materialyoucolor
-       - python-pywal
        - steam
        - steam-devices
        - gamescope

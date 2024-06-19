@@ -13,7 +13,10 @@ modules:
     remove:
        - firefox
        - firefox-langpacks
-
+       
+  - type: files
+    files:
+      - usr: /usr
   - type: default-flatpaks
     notify: true
     system:

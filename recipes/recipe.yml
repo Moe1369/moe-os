@@ -18,9 +18,9 @@ modules:
        - steam
        - steam-devices
        - gamescope
-       - gamemode
+       #- gamemode
     remove:
-       - gamemode # Is already preinstalled we want the git version
+       #- gamemode # Is already preinstalled we want the git version
        - firefox
        - firefox-langpacks
   - type: default-flatpaks

@@ -20,9 +20,9 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
-       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-       repo-name: flathub
-       repo-title: "Flathub (system-wide)"
+       #repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+       #repo-name: flathub
+       #repo-title: "Flathub (system-wide)"
     install:
          - org.mozilla.firefox
          - com.dec05eba.gpu_screen_recorder

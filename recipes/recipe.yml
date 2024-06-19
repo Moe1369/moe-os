@@ -18,17 +18,12 @@ modules:
        - steam
        - steam-devices
        - gamescope
-       #- gamemode
     remove:
-       #- gamemode # Is already preinstalled we want the git version
        - firefox
        - firefox-langpacks
   - type: default-flatpaks
     notify: true
     system:
-       #repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-       #repo-name: flathub
-       #repo-title: "Flathub (system-wide)"
     install:
          - org.mozilla.firefox
          - com.dec05eba.gpu_screen_recorder

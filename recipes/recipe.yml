@@ -1,4 +1,4 @@
-name: moe.os
+name: moe-os
 description: Moe's Persönliches uBlue Image
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 40

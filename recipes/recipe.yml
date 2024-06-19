@@ -21,6 +21,7 @@ modules:
     remove:
        - firefox
        - firefox-langpacks
+       - distrobox
   - type: default-flatpaks
     notify: true
     system:

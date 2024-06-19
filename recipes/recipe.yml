@@ -20,7 +20,7 @@ modules:
        repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
        repo-name: flathub
        repo-title: "Flathub (system-wide)"
-      install:
+    install:
          - org.mozilla.firefox
          - com.dec05eba.gpu_screen_recorder
          - dev.vencord.Vesktop

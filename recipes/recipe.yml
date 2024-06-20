@@ -24,6 +24,9 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
+       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+       repo-name: flathub
+       repo-title: "Flathub (system-wide)" 
     install:
          - org.mozilla.firefox
          - com.dec05eba.gpu_screen_recorder
@@ -45,16 +48,6 @@ modules:
          - org.kde.kruler
          - org.kde.okular
          - org.kde.skanpage
-         - com.ktechpit.whatsie
-         - org.kde.kdf
-         - io.github.jonmagon.kdiskmark
-         - net.davidotek.pupgui2
-         - org.kde.marble
-         - org.kde.kompare
-         - org.kde.kgeography
-         - org.kde.ktrip
-         - org.kde.koko
-         - org.kde.audiotube
          - org.kde.digikam
   - type: signing
 

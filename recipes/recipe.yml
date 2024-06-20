@@ -31,8 +31,8 @@ modules:
        repo-title: "Flathub (System)" 
     install:
        - com.valvesoftware.Steam
-       #- com.valvesoftware.Steam.Utility.InhibitScreensaver
-       - org.freedesktop.Platform.VulkanLayer.gamescope
+       - com.valvesoftware.Steam.Utility.InhibitScreensaver
+       #- org.freedesktop.Platform.VulkanLayer.gamescope
        - org.mozilla.firefox
        - com.dec05eba.gpu_screen_recorder
        - dev.vencord.Vesktop

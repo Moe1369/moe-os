@@ -64,6 +64,8 @@ modules:
        - org.kde.ktrip
        - org.kde.koko
        - org.kde.audiotube
-    remove:
-    
+  - type: script
+    snippets:
+       - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"
+       - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
   - type: signing

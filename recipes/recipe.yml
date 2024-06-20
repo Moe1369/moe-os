@@ -23,7 +23,6 @@ modules:
        - firefox-langpacks
        - distrobox
        - wireguard-tools
-       - google-noto-sans-balinese-fonts
   - type: default-flatpaks
     notify: true
     system:

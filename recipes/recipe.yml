@@ -18,7 +18,6 @@ modules:
        - steam
        - steam-devices
        - gamescope
-       - ibm-plex-fonts-all
     remove:
        - firefox
        - firefox-langpacks

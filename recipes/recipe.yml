@@ -49,5 +49,15 @@ modules:
          - org.kde.okular
          - org.kde.skanpage
          - com.ktechpit.whatsie
+         - org.kde.kdf
+         - io.github.jonmagon.kdiskmark
+         - net.davidotek.pupgui2
+         - org.kde.marble
+         - org.kde.kompare
+         - org.kde.kgeography
+         - org.kde.ktrip
+         - org.kde.koko
+         - org.kde.audiotube
+         - org.kde.digikam
   - type: signing
 

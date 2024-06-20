@@ -24,7 +24,7 @@ modules:
        - distrobox
        - wireguard-tools
        - solaar-udev
-       - openrgb-udev-rules
+       - oversteer-udev
   - type: default-flatpaks
     notify: true
     system:

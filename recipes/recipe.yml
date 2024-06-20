@@ -8,6 +8,10 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
+    keys:
+       - https://download.copr.fedorainfracloud.org/results/luisbocanegra/kde-material-you-colors/pubkey.gpg
+       - https://download.copr.fedorainfracloud.org/results/errornointernet/klassy/pubkey.gpg
+       - https://download.copr.fedorainfracloud.org/results/vulongm/gamescope-git/pubkey.gpg
     install:
        - klassy
        - kde-material-you-colors

@@ -25,12 +25,9 @@ modules:
        - wireguard-tools
        - solaar-udev
        - libratbag-ratbagd
-       - tmux
        - oversteer-udev
        - solaar-udev
-       - vim
        - openrgb-udev-rules
-       - tcpdump
   - type: default-flatpaks
     notify: true
     system:

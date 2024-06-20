@@ -26,7 +26,6 @@ modules:
        - solaar-udev
        - libratbag-ratbagd
        - oversteer-udev
-       - solaar-udev
        - openrgb-udev-rules
   - type: default-flatpaks
     notify: true

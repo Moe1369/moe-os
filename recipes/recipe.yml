@@ -8,10 +8,6 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
-    keys:
-       - https://download.copr.fedorainfracloud.org/results/luisbocanegra/kde-material-you-colors/pubkey.gpg
-       - https://download.copr.fedorainfracloud.org/results/errornointernet/klassy/pubkey.gpg
-       - https://download.copr.fedorainfracloud.org/results/vulongm/gamescope-git/pubkey.gpg
     install:
        - klassy
        - kde-material-you-colors
@@ -25,3 +21,44 @@ modules:
        - firefox-langpacks
        - distrobox
        - wireguard-tools
+  - type: default-flatpaks
+    notify: true
+    system:
+       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+       repo-name: flathub
+       repo-title: "Flathub (System)" 
+    install:
+       - org.mozilla.firefox
+       - com.dec05eba.gpu_screen_recorder
+       - dev.vencord.Vesktop
+       - net.davidotek.pupgui2
+       - org.blender.Blender
+       - org.kde.elisa
+       - org.kde.gwenview
+       - org.kde.haruna
+       - org.kde.isoimagewriter
+       - org.kde.kcolorchooser
+       - org.kde.kdenlive
+       - org.kde.kdiff3
+       - org.kde.kget
+       - org.kde.kontact
+       - org.kde.kolourpaint
+       - org.kde.kommit
+       - org.kde.krita
+       - org.kde.kruler
+       - org.kde.okular
+       - org.kde.skanpage
+       - org.kde.digikam
+       - com.ktechpit.whatsie
+       - org.kde.kdf
+       - io.github.jonmagon.kdiskmark
+       - net.davidotek.pupgui2
+       - org.kde.marble
+       - org.kde.kompare
+       - org.kde.kgeography
+       - org.kde.ktrip
+       - org.kde.koko
+       - org.kde.audiotube
+    remove:
+    
+  - type: signing

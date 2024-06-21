@@ -23,7 +23,6 @@ modules:
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
        - nvtop
-       - vim
        - solaar-udev
        - tmux
        - openrgb-udev-rules

@@ -24,11 +24,11 @@ modules:
        - google-noto-sans-sundanese-fonts
   - type: default-flatpaks
     notify: true
-    user: 
+    system: 
       install:
         - com.valvesoftware.Steam
         - com.valvesoftware.Steam.Utility.InhibitScreensaver
-        #- org.freedesktop.Platform.VulkanLayer.gamescope
+        - org.freedesktop.Platform.VulkanLayer.gamescope//23.08
         - org.mozilla.firefox
         - com.dec05eba.gpu_screen_recorder
         - dev.vencord.Vesktop
@@ -64,4 +64,9 @@ modules:
     snippets:
        - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"
        - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
+type: systemd
+system:
+  enabled:
+    - system-flatpak-setup.service
+       
   - type: signing

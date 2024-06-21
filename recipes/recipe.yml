@@ -25,47 +25,44 @@ modules:
        - google-noto-sans-sundanese-fonts
   - type: default-flatpaks
     notify: true
-    system:
-       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-       repo-name: flathub
-       repo-title: "Flathub (System)" 
+    user: 
     install:
-     # - com.valvesoftware.Steam
-     # - com.valvesoftware.Steam.Utility.InhibitScreensaver
-     #- org.freedesktop.Platform.VulkanLayer.gamescope
-     # - org.mozilla.firefox
-     # - com.dec05eba.gpu_screen_recorder
-     # - dev.vencord.Vesktop
-     # - net.davidotek.pupgui2
-     # - org.blender.Blender
-     # - org.kde.elisa
-     # - org.kde.gwenview
-     # - org.kde.haruna
-     # - org.kde.isoimagewriter
-     # - org.kde.kcolorchooser
-     # - org.kde.kdenlive
-     # - org.kde.kdiff3
-     # - org.kde.kget
-     # - org.kde.kontact
-     # - org.kde.kolourpaint
-     # - org.kde.kommit
-     # - org.kde.krita
-     # - org.kde.kruler
-     # - org.kde.okular
-     # - org.kde.skanpage
-     # - org.kde.digikam
-     # - com.ktechpit.whatsie
-      #- org.kde.kdf
-      #- io.github.jonmagon.kdiskmark
-     # - net.davidotek.pupgui2
-     # - org.kde.marble
-      #- org.kde.kompare
-      #- org.kde.kgeography
-      #- org.kde.ktrip
-      #- org.kde.koko
+      - com.valvesoftware.Steam
+      - com.valvesoftware.Steam.Utility.InhibitScreensaver
+      - org.freedesktop.Platform.VulkanLayer.gamescope
+      - org.mozilla.firefox
+      - com.dec05eba.gpu_screen_recorder
+      - dev.vencord.Vesktop
+      - net.davidotek.pupgui2
+      - org.blender.Blender
+      - org.kde.elisa
+      - org.kde.gwenview
+      - org.kde.haruna
+      - org.kde.isoimagewriter
+      - org.kde.kcolorchooser
+      - org.kde.kdenlive
+      - org.kde.kdiff3
+      - org.kde.kget
+      - org.kde.kontact
+      - org.kde.kolourpaint
+      - org.kde.kommit
+      - org.kde.krita
+      - org.kde.kruler
+      - org.kde.okular
+      - org.kde.skanpage
+      - org.kde.digikam
+      - com.ktechpit.whatsie
+      - org.kde.kdf
+      - io.github.jonmagon.kdiskmark
+      - net.davidotek.pupgui2
+      - org.kde.marble
+      - org.kde.kompare
+      - org.kde.kgeography
+      - org.kde.ktrip
+      - org.kde.koko
       - org.kde.audiotube
- # - type: script
- #   snippets:
- #      - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"
- #      - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
+  - type: script
+    snippets:
+       - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"
+       - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
   - type: signing

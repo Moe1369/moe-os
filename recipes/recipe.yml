@@ -22,6 +22,14 @@ modules:
        - google-noto-sans-cjk-fonts
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
+       - nvtop
+       - vim
+       - solaar-udev
+       - tmux
+       - openrgb-udev-rules
+       - libratbag-ratbagd
+       - oversteer-udev
+       - htop
   - type: default-flatpaks
     notify: true
     system: 

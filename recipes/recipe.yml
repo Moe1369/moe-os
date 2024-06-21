@@ -64,9 +64,9 @@ modules:
     snippets:
        - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"
        - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
-type: systemd
-system:
-  enabled:
-    - system-flatpak-setup.service
+  - type: systemd
+    system:
+      enabled:
+        - system-flatpak-setup.service
        
   - type: signing

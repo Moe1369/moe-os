@@ -28,11 +28,7 @@ modules:
        - solaar-udev
        - openrgb-udev-rules
        - oversteer-udev
-       - lshw
-       - nvme-cli
        - nvtop
-       - powerstat
-       - vim
   - type: default-flatpaks
     notify: true
     system: 

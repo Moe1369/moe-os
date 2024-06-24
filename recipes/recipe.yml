@@ -25,6 +25,9 @@ modules:
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
        - nvtop
+       - solaar-udev
+       - openrgb-udev-rules
+       - oversteer-udev
   - type: default-flatpaks
     notify: true
     system: 

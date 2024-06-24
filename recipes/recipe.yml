@@ -19,6 +19,8 @@ modules:
        - xwaylandvideobridge
        - gamescope
        - ibm-plex-fonts-all
+       - xwininfo
+       - yad
     remove:
        - firefox
        - firefox-langpacks

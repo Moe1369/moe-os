@@ -37,7 +37,6 @@ modules:
     notify: true
     user: 
       install:
-        - com.dec05eba.gpu_screen_recorder
         - dev.vencord.Vesktop
         - net.davidotek.pupgui2
         - org.blender.Blender
@@ -71,6 +70,7 @@ modules:
     system: 
       install:
         - org.mozilla.firefox
+        - com.dec05eba.gpu_screen_recorder
   - type: systemd
     user:
       enabled:

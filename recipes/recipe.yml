@@ -15,6 +15,7 @@ modules:
        - python-pywal
        - steam-devices
        - steam
+       - mesa-va-drivers-freeworld
     remove:
        - firefox
        - firefox-langpacks
@@ -24,7 +25,7 @@ modules:
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
        - nvtop
-       - just
+       - mesa-va-drivers
   - type: default-flatpaks
     notify: true
     system: 

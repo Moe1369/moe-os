@@ -15,7 +15,7 @@ modules:
        - python-pywal
        - steam-devices
        - steam
-       - mesa-va-drivers-freeworld
+       - mesa-va-drivers-freeworld.i686
     remove:
        - firefox
        - firefox-langpacks

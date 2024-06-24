@@ -28,8 +28,8 @@ modules:
        - solaar-udev
        - openrgb-udev-rules
        - oversteer-udev
-       - nvme-cli
-       - smartmontools
+       - tcpdump
+       - tmux
   - type: default-flatpaks
     notify: true
     system: 

@@ -72,5 +72,8 @@ modules:
   - type: systemd
     user:
       enabled:
-        - user-flatpak-setup.service       
+        - user-flatpak-setup.service  
+    system:
+      enabled:
+        - system-flatpak-setup.service
   - type: signing

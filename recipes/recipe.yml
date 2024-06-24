@@ -35,6 +35,7 @@ modules:
        - oversteer-udev
        - tcpdump
        - tmux
+       - vim
   - type: default-flatpaks
     notify: true
     user: 

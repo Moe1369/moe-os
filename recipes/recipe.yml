@@ -29,6 +29,7 @@ modules:
        - openrgb-udev-rules
        - oversteer-udev
        - nvme-cli
+       - smartmontools
   - type: default-flatpaks
     notify: true
     system: 

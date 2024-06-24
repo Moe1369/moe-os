@@ -32,7 +32,7 @@ modules:
        - tmux
   - type: default-flatpaks
     notify: true
-    system: 
+    user: 
       install:
         - org.mozilla.firefox
         - com.dec05eba.gpu_screen_recorder
@@ -72,7 +72,7 @@ modules:
        - "flatpak override --filesystem=xdg-config/gtk-4.0:ro"
        - "flatpak override --filesystem=xdg-config/.icons:ro"
   - type: systemd
-    system:
+    user:
       enabled:
-        - system-flatpak-setup.service       
+        - user-flatpak-setup.service       
   - type: signing

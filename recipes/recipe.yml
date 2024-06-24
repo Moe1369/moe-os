@@ -28,7 +28,6 @@ modules:
        - solaar-udev
        - openrgb-udev-rules
        - oversteer-udev
-       - nvtop
   - type: default-flatpaks
     notify: true
     system: 

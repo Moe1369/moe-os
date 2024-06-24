@@ -18,6 +18,7 @@ modules:
        - mesa-va-drivers-freeworld.i686
        - xwaylandvideobridge
        - gamescope
+       - ibm-plex-fonts-all
     remove:
        - firefox
        - firefox-langpacks

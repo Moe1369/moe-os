@@ -25,7 +25,6 @@ modules:
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
        - nvtop
-       - mesa-va-drivers
   - type: default-flatpaks
     notify: true
     system: 

@@ -65,6 +65,7 @@ modules:
         - org.kde.ktrip
         - org.kde.koko
         - org.kde.audiotube
+        - com.obsproject.Studio
   - type: script
     snippets:
        - "flatpak override --filesystem=xdg-config/gtk-3.0:ro"

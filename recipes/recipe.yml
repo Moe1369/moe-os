@@ -35,7 +35,6 @@ modules:
     notify: true
     user: 
       install:
-        - org.mozilla.firefox
         - com.dec05eba.gpu_screen_recorder
         - dev.vencord.Vesktop
         - net.davidotek.pupgui2
@@ -67,6 +66,9 @@ modules:
         - org.kde.koko
         - org.kde.audiotube
         - com.obsproject.Studio
+    system: 
+      install:
+        - org.mozilla.firefox
   - type: systemd
     user:
       enabled:

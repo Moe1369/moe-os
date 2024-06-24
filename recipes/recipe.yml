@@ -8,7 +8,6 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/playtron/gaming/repo/fedora-%OS_VERSION%/playtron-gaming-fedora-%OS_VERSION%.repo
     install:
        - klassy
        - kde-material-you-colors
@@ -22,7 +21,6 @@ modules:
        - ibm-plex-fonts-all
        - xwininfo
        - yad
-       - gamescope-session
     remove:
        - firefox
        - firefox-langpacks

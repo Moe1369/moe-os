@@ -17,6 +17,7 @@ modules:
        - steam
        - mesa-va-drivers-freeworld.i686
        - xwaylandvideobridge
+       - gamescope
     remove:
        - firefox
        - firefox-langpacks

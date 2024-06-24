@@ -14,6 +14,7 @@ modules:
        - python-materialyoucolor
        - python-pywal
        - steam-devices
+       - steam
     remove:
        - firefox
        - firefox-langpacks
@@ -27,9 +28,6 @@ modules:
     notify: true
     system: 
       install:
-        - com.valvesoftware.Steam
-        - com.valvesoftware.Steam.Utility.InhibitScreensaver
-        - org.freedesktop.Platform.VulkanLayer.gamescope//23.08
         - org.mozilla.firefox
         - com.dec05eba.gpu_screen_recorder
         - dev.vencord.Vesktop
@@ -68,6 +66,5 @@ modules:
   - type: systemd
     system:
       enabled:
-        - system-flatpak-setup.service
-       
+        - system-flatpak-setup.service       
   - type: signing

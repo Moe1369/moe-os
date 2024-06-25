@@ -37,8 +37,10 @@ modules:
        - tmux
   - type: default-flatpaks
     notify: true
-    user: 
+    system: 
       install:
+        - org.mozilla.firefox
+        - com.dec05eba.gpu_screen_recorder
         - dev.vencord.Vesktop
         - net.davidotek.pupgui2
         - org.blender.Blender
@@ -69,10 +71,6 @@ modules:
         - org.kde.koko
         - org.kde.audiotube
         - com.obsproject.Studio
-    system: 
-      install:
-        - org.mozilla.firefox
-        - com.dec05eba.gpu_screen_recorder
   - type: systemd
     user:
       enabled:

@@ -9,6 +9,7 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
        - https://negativo17.org/repos/fedora-uld.repo
+       - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
     install:
        - klassy
        - kde-material-you-colors
@@ -25,6 +26,8 @@ modules:
        - xwininfo
        - yad
        - uld
+       - gamescope-session-plus
+       - gamescope-session-steam
     remove:
        - firefox
        - firefox-langpacks

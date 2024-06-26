@@ -16,6 +16,8 @@ modules:
        - steam-devices
        - steam
        - mesa-va-drivers-freeworld.i686
+       - mesa-vdpau-drivers-freeworld.i686
+       - mesa-vdpau-drivers-freeworld.x86_64
        - xwaylandvideobridge
        - gamescope
        - ibm-plex-fonts-all

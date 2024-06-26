@@ -28,6 +28,7 @@ modules:
        - uld
        - gamescope-session-plus
        - gamescope-session-steam
+       - mangohud
     remove:
        - firefox
        - firefox-langpacks

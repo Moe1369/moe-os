@@ -42,7 +42,4 @@ modules:
        - oversteer-udev
        - tcpdump
        - tmux
-  - type: script
-    snippets:
-       - "curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh"
   - type: signing

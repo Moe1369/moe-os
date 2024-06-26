@@ -29,6 +29,7 @@ modules:
        - gamescope-session-plus
        - gamescope-session-steam
        - mangohud
+       - kbackup
     remove:
        - firefox
        - firefox-langpacks

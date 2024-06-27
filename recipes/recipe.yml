@@ -47,14 +47,14 @@ modules:
     repos:
        - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
     install:
-       - gamescope-shaders
+       - gamescope
        
   # Gamescope Shaders
   - type: rpm-ostree
     repos:
        - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
-       - gamescope
+       - gamescope-shaders
        
   # Gamescope Session
   - type: rpm-ostree

@@ -55,6 +55,7 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
        - gamescope-shaders
+       - sdgyrodsu
        
   # Gamescope Session
   - type: rpm-ostree
@@ -63,13 +64,6 @@ modules:
     install:
        - gamescope-session-plus
        - gamescope-session-steam
-
-  # Joystickwake
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/joystickwake/repo/fedora-%OS_VERSION%/yohane-shiro-joystickwake-fedora-%OS_VERSION%.repo
-    install:
-       - joystickwake  
        
   # Printer Driver
   - type: rpm-ostree

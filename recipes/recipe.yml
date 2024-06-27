@@ -23,13 +23,9 @@ modules:
        - xwaylandvideobridge
        - gamescope
        - ibm-plex-fonts-all
-       - xwininfo
-       - yad
        - uld
        - gamescope-session-plus
        - gamescope-session-steam
-       - mangohud.i686
-       - mangohud.x86_64
     remove:
        - firefox
        - firefox-langpacks

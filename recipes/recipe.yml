@@ -30,6 +30,7 @@ modules:
        - oversteer-udev
        - tcpdump
        - tmux
+       - libratbag-ratbagd
        
   # Customization
   - type: rpm-ostree

@@ -71,11 +71,16 @@ modules:
        - https://negativo17.org/repos/fedora-uld.repo
     install:
        - uld
+       
   # AKmods for Controller Dongle Support
   - type: akmods
     base: main
     install:
-    - xone
-    - xpadneo
+       - xone
+       - xpadneo
+ # Flatpaks
+  - type: default-flatpaks
+    install:
+       - com.google.Chrome
     
   - type: signing

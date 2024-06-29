@@ -78,5 +78,9 @@ modules:
     install:
     - xone
     - xpadneo
+
+  # Use the default flatpak module to setup repos. We want to install flatpaks manually
+  - type: default-flatpaks
+    system:  
     
   - type: signing

@@ -57,5 +57,6 @@ This happens in multi GPU setups which are becoming more common.
 Go into Plasma Menu Editor, copy and paste Steam Desktop File and keep the name the same.
 
 Open your .desktop File and change the value to false as seen in the screenshot.
+
 ![grafik](https://github.com/Moe1369/moe-os/assets/65728018/b9346111-81f3-4886-9808-49354378feb4)
 

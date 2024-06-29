@@ -78,6 +78,7 @@ modules:
     install:
        - xone
        - xpadneo
+       
  # Flatpaks
   - type: default-flatpaks
     install:

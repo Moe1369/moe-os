@@ -34,6 +34,17 @@ Nobaras Package expects a qdbus binary but kinoite installs it as qdbus-qt6.
 
 Create a new Folder under your home and symlink the binary under a new name.
 ```
-mkdir bin
+mkdir bin \
 ln -s /usr/bin/qdbus-qt6 /var/home/YOURUSERNAME/bin/qdbus
 ```
+
+### Steam Deck Mode won't update OOBE
+
+Login to Plasma and complete OOBE once in nested gamescope
+```
+ gamescope -e -- steam -steamdeck
+```
+
+### Wrong keyboard layout
+
+Apparently one of the images defaults to en_US Keyboard Layout. Change it back in Plasma Settings.

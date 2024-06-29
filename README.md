@@ -3,6 +3,8 @@
 Custom Fedora Image made with [BlueBuild](https://blue-build.org).
 For personal use based on [ublue-os Silverblue main Variant](https://github.com/ublue-os/main/)
 
+This is meant to somewhat emulate bazzite while keeping things "clean". Used as a daily driver for general usage and secondarily for couch gaming.
+
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:

@@ -1,6 +1,6 @@
 name: moe-os
 description: Moe's Persönliches uBlue Image
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40
 modules:
   # Default Repo Packages
@@ -12,7 +12,6 @@ modules:
        - mesa-va-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.x86_64
-       - xwaylandvideobridge
        - ibm-plex-fonts-all
        - mangohud
        - gamemode
@@ -32,16 +31,16 @@ modules:
        - tmux
        - libratbag-ratbagd
        
-  # Customization
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
-    install:
-       - klassy
-       - kde-material-you-colors
-       - python-materialyoucolor
-       - python-pywal
+  # Customization for KDE Plasma
+ # - type: rpm-ostree
+ #   repos:
+ #      - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
+ #      - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
+ #   install:
+ #      - klassy
+ #      - kde-material-you-colors
+ #      - python-materialyoucolor
+ #      - python-pywal
        
   # Gamescope Git
   - type: rpm-ostree
@@ -72,11 +71,16 @@ modules:
        - https://negativo17.org/repos/fedora-uld.repo
     install:
        - uld
+       
   # AKmods for Controller Dongle Support
   - type: akmods
     base: main
     install:
-    - xone
-    - xpadneo
+       - xone
+       - xpadneo
+ # Flatpaks
+  - type: default-flatpaks
+    install:
+       - com.google.Chrome
     
   - type: signing

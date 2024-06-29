@@ -1,7 +1,7 @@
 # moe-os &nbsp; [![build-ublue](https://github.com/moe1369/moe-os/actions/workflows/build.yml/badge.svg)](https://github.com/moe1369/moe-os/actions/workflows/build.yml)
 
 Custom Fedora Image made with [BlueBuild](https://blue-build.org).
-For personal use based on [ublue-os Kinoite main Variant](https://github.com/ublue-os/main/)
+For personal use based on [ublue-os Silverblue main Variant](https://github.com/ublue-os/main/)
 
 ## Installation
 

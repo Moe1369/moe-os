@@ -50,3 +50,12 @@ Login to Plasma and complete OOBE once in nested gamescope
 ### Wrong keyboard layout
 
 Apparently one of the images defaults to en_US Keyboard Layout. Change it back in Plasma Settings.
+
+### Steam in Desktop Mode flashes on and off
+This happens in multi GPU setups which are becoming more common. 
+
+Go into Plasma Menu Editor, copy and paste Steam Desktop File and keep the name the same.
+
+Open your .desktop File and change the value to false as seen in the screenshot.
+![grafik](https://github.com/Moe1369/moe-os/assets/65728018/b9346111-81f3-4886-9808-49354378feb4)
+

@@ -16,6 +16,7 @@ modules:
        - ibm-plex-fonts-all
        - mangohud
        - gamemode
+       - gamescope
     remove:
        - firefox
        - firefox-langpacks
@@ -44,11 +45,11 @@ modules:
        - python-pywal
        
   # Gamescope Git
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
-    install:
-       - gamescope
+ # - type: rpm-ostree
+ #   repos:
+ #      - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
+ #   install:
+ #      - gamescope
        
   # Gamescope Shaders
   - type: rpm-ostree

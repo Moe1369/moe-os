@@ -5,7 +5,7 @@ image-version: 40
 modules:
   # Default Repo Packages
   - type: rpm-ostree
-    repos:
+    #repos:
     install:
        - steam-devices
        - steam
@@ -17,7 +17,7 @@ modules:
        - mangohud
        - gamemode
        - gamescope
-       - gamescope-libs
+       #- gamescope-libs
     remove:
        - firefox
        - firefox-langpacks

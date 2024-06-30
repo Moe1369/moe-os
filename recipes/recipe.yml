@@ -57,16 +57,14 @@ modules:
     install:
        - gamescope-shaders
        - sdgyrodsu
-       - gamescope-session-plus
-       - gamescope-session-steam
        - gamescope
   # Gamescope Session
-  #- type: rpm-ostree
-  #  repos:
-  #     - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
-  #  install:
-  #     - gamescope-session-plus
-  #     - gamescope-session-steam
+  - type: rpm-ostree
+    repos:
+       - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+    install:
+       - gamescope-session-plus
+       - gamescope-session-steam
        
   # Printer Driver
   - type: rpm-ostree

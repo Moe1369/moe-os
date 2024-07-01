@@ -31,6 +31,7 @@ modules:
        - tcpdump
        - tmux
        - libratbag-ratbagd
+       - htop
        
   # Customization
   - type: rpm-ostree

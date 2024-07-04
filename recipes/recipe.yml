@@ -69,11 +69,11 @@ modules:
        - uld
        
     # Joystickwake   
- # - type: rpm-ostree
-    #repos:
-    #   - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
-   # install:
-   #    - joystickwake
+  - type: rpm-ostree
+    repos:
+       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+    install:
+       - joystickwake
        
   # AKmods for Controller Dongle Support
   - type: akmods

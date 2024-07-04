@@ -66,6 +66,13 @@ modules:
     install:
        - uld
        
+    # Joystickwake   
+  - type: rpm-ostree
+    repos:
+       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/joystickwake/repo/fedora-%OS_VERSION%/yohane-shiro-joystickwake-fedora-%OS_VERSION%.repo
+    install:
+       - joystickwake
+       
   # AKmods for Controller Dongle Support
   - type: akmods
     base: main

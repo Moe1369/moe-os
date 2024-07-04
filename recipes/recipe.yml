@@ -69,7 +69,7 @@ modules:
     # Joystickwake   
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/yohane-shiro/joystickwake/repo/fedora-%OS_VERSION%/yohane-shiro-joystickwake-fedora-%OS_VERSION%.repo
+       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
        - joystickwake
        

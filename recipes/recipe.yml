@@ -32,7 +32,6 @@ modules:
        - tmux
        - libratbag-ratbagd
        - htop
-       - powerstat
        
   # Customization
   - type: rpm-ostree

@@ -1,6 +1,6 @@
 name: moe-os
 description: Moe's Persönliches uBlue Image
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40
 modules:
   # Default Repo Packages
@@ -12,7 +12,7 @@ modules:
        - mesa-va-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.x86_64
-       - xwaylandvideobridge
+     #  - xwaylandvideobridge
        - ibm-plex-fonts-all
        - mangohud
        - gamemode

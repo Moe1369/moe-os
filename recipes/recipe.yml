@@ -34,15 +34,15 @@ modules:
        - htop
        
   # Customization
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
-    install:
-       - klassy
-       - kde-material-you-colors
-       - python-materialyoucolor
-       - python-pywal
+#  - type: rpm-ostree
+#    repos:
+#       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
+#       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
+#    install:
+#       - klassy
+#       - kde-material-you-colors
+#       - python-materialyoucolor
+#       - python-pywal
        
   # Gamescope Git
   - type: rpm-ostree

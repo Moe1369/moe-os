@@ -16,7 +16,10 @@ modules:
        - ibm-plex-fonts-all
        - mangohud
        - gamemode
+       - gnome-console
     remove:
+       - gnome-terminal
+       - gnome-terminal-nautilus
        - firefox
        - firefox-langpacks
        - wireguard-tools

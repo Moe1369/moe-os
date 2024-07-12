@@ -26,8 +26,6 @@ modules:
        - guestfs-tools
        - python3-libguestfs
        - virt-top
-       - kvantum
-       - adw-gtk3-theme
 
     remove:
        - firefox
@@ -57,12 +55,6 @@ modules:
        - kde-material-you-colors
        - python-materialyoucolor
        - python-pywal
-       - lightlyshaders
-       - lightly-qt5
-       - lightly-qt6
-       - kvantum-theme-libadwaita
-
-
        
   # Gamescope Git
   - type: rpm-ostree

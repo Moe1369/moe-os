@@ -23,9 +23,12 @@ modules:
        - qemu-kvm
        - virt-manager
        - virt-viewer
-       -  guestfs-tools
+       - guestfs-tools
        - python3-libguestfs
        - virt-top
+       - kvantum
+       - kvantum-theme-libadwaita
+       - adw-gtk3-theme
 
     remove:
        - firefox

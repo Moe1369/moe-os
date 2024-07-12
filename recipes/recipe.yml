@@ -27,7 +27,6 @@ modules:
        - python3-libguestfs
        - virt-top
        - kvantum
-       - kvantum-theme-libadwaita
        - adw-gtk3-theme
 
     remove:
@@ -61,6 +60,8 @@ modules:
        - lightlyshaders
        - lightly-qt5
        - lightly-qt6
+       - kvantum-theme-libadwaita
+
 
        
   # Gamescope Git

@@ -78,8 +78,6 @@ modules:
   # Printer Driver
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
-
        - https://negativo17.org/repos/fedora-uld.repo
     install:
        - uld

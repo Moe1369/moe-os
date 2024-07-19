@@ -49,9 +49,9 @@ modules:
     repos:
        - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
     install:
-       -  coolercontrol
-       -  coolercontrol-liqctld
-       -  coolercontrold
+       - coolercontrol
+       - coolercontrol-liqctld
+       - coolercontrold
        
   # Customization
   - type: rpm-ostree

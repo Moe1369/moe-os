@@ -44,13 +44,6 @@ modules:
        - libratbag-ratbagd
        - htop
 
-  # Cooler Control
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
-    install:
-       - coolercontrol
-       
   # Customization
   - type: rpm-ostree
     repos:

@@ -34,9 +34,9 @@ The `latest` tag will automatically point to the latest build. That build will s
 Nobaras Package expects a qdbus binary but kinoite installs it as qdbus-qt6.
 
 Create a new Folder under your home and symlink the binary under a new name.
+/usr is read only so symlink it to your home bin.
 ```
-mkdir bin \
-ln -s /usr/bin/qdbus-qt6 /var/home/YOURUSERNAME/bin/qdbus
+ln -s /usr/bin/qdbus-qt6 ~/.local/bin/qdbus
 ```
 
 ### Steam Deck Mode won't update OOBE

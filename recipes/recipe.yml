@@ -80,7 +80,12 @@ modules:
   # Use the default flatpak module to setup repos. We want to install flatpaks manually
   - type: default-flatpaks
     system:  
-
+  # Add custom .desktop files to /usr/share/applications
+  - type: files
+    files:
+      - source: applications
+        destination: /usr/share/applications
+      
   # Gnome Extensions
   - type: gnome-extensions
     install:

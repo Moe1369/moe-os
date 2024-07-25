@@ -25,10 +25,6 @@ modules:
        - firefox
        - firefox-langpacks
        - wireguard-tools
-       - google-noto-sans-balinese-fonts
-       - google-noto-sans-cjk-fonts
-       - google-noto-sans-javanese-fonts
-       - google-noto-sans-sundanese-fonts
        - nvtop
        - solaar-udev
        - openrgb-udev-rules
@@ -90,12 +86,12 @@ modules:
         destination: /usr/share/applications
       
   # Gnome Extensions
-  #- type: gnome-extensions
-  #  install:
-  #     - Night Theme Switcher
-  #     - AppIndicator and KStatusNotifierItem Support
-  #     - Clipboard Indicator
-  #     - Caffeine
-  #  uninstall:
+  - type: gnome-extensions
+    install:
+       - Night Theme Switcher
+       - AppIndicator and KStatusNotifierItem Support
+       - Clipboard Indicator
+       - Caffeine
+    uninstall:
 
   - type: signing

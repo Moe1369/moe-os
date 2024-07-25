@@ -56,8 +56,6 @@ modules:
   # Printer Driver
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
-
        - https://negativo17.org/repos/fedora-uld.repo
     install:
        - uld
@@ -80,6 +78,11 @@ modules:
   # Use the default flatpak module to setup repos. We want to install flatpaks manually
   - type: default-flatpaks
     system:  
+    notify: true
+    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    repo-name: flathub
+    repo-title: "Flathub (System)"
+    
   # Add custom .desktop files to /usr/share/applications
   - type: files
     files:

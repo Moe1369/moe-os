@@ -86,12 +86,12 @@ modules:
         destination: /usr/share/applications
       
   # Gnome Extensions
-  - type: gnome-extensions
-    install:
-       - Night Theme Switcher
-       - AppIndicator and KStatusNotifierItem Support
-       - Clipboard Indicator
-       - Caffeine
-    uninstall:
+  #- type: gnome-extensions
+  #  install:
+  #     - Night Theme Switcher
+  #     - AppIndicator and KStatusNotifierItem Support
+  #     - Clipboard Indicator
+  #     - Caffeine
+  #  uninstall:
 
   - type: signing

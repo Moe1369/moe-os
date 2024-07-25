@@ -1,6 +1,6 @@
 name: moe-os
 description: Moe's Persönliches uBlue Image
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40
 modules:
   # Default Repo Packages
@@ -12,22 +12,14 @@ modules:
        - mesa-va-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.i686
        - mesa-vdpau-drivers-freeworld.x86_64
-       - xwaylandvideobridge
+     #  - xwaylandvideobridge
        - ibm-plex-fonts-all
        - mangohud
        - gamemode
-       - waydroid
-       - virt-install
-       - libvirt-daemon-config-network
-       - libvirt-daemon-kvm
-       - qemu-kvm
-       - virt-manager
-       - virt-viewer
-       - guestfs-tools
-       - python3-libguestfs
-       - virt-top
-
+       - gnome-console
     remove:
+       - gnome-terminal
+       - gnome-terminal-nautilus
        - firefox
        - firefox-langpacks
        - wireguard-tools
@@ -43,18 +35,17 @@ modules:
        - tmux
        - libratbag-ratbagd
        - htop
-
+       
   # Customization
-  - type: rpm-ostree
-    repos:
-       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-%OS_VERSION%/hazel-bunny-ricing-fedora-%OS_VERSION%.repo
-    install:
-       - klassy
-       - kde-material-you-colors
-       - python-materialyoucolor
-       - python-pywal
+#  - type: rpm-ostree
+#    repos:
+#       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
+#       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
+#    install:
+#       - klassy
+#       - kde-material-you-colors
+#       - python-materialyoucolor
+#       - python-pywal
        
   # Gamescope Git
   - type: rpm-ostree
@@ -74,6 +65,8 @@ modules:
   # Printer Driver
   - type: rpm-ostree
     repos:
+       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+
        - https://negativo17.org/repos/fedora-uld.repo
     install:
        - uld
@@ -96,5 +89,12 @@ modules:
   # Use the default flatpak module to setup repos. We want to install flatpaks manually
   - type: default-flatpaks
     system:  
+
+  # Gnome Extensions
+  - type: gnome-extensions
+    install:
+       - Night Theme Switcher
+       - AppIndicator and KStatusNotifierItem Support
+    uninstall:
 
   - type: signing

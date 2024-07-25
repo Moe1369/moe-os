@@ -18,6 +18,7 @@ modules:
        - gamemode
        - gnome-console
        # Citrix Client
+       - adw-gtk3-theme
        - https://downloads.citrix.com/22718/ICAClient-rhel-24.5.0.76-0.x86_64.rpm?__gda__=exp=1721926070~acl=/*~hmac=1af9f84a90b1d1f8f3382917d51651eec0d86e7adfe6285b83757f22f3a75ed0
     remove:
        - gnome-terminal

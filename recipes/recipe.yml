@@ -82,11 +82,11 @@ modules:
     system:  
 
   # Gnome Extensions
-  - type: gnome-extensions
-    install:
-       - Night Theme Switcher
-       - AppIndicator and KStatusNotifierItem Support
-       - Clipboard Indicator
-    uninstall:
+ # - type: gnome-extensions
+ #   install:
+ #      - Night Theme Switcher
+ #      - AppIndicator and KStatusNotifierItem Support
+ #      - Clipboard Indicator
+ #   uninstall:
 
   - type: signing

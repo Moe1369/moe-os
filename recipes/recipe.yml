@@ -14,17 +14,17 @@ modules:
       - mesa-vdpau-drivers-freeworld.x86_64
       - ibm-plex-fonts-all
       - mangohud
-      - waydroid
-      - virt-install
-      - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
-      - qemu-kvm
-      - virt-manager
-      - virt-viewer
-      - guestfs-tools
-      - python3-libguestfs
-      - virt-top
-      #- corectrl
+      #- waydroid
+      #- virt-install
+      #- libvirt-daemon-config-network
+      #- libvirt-daemon-kvm
+      #- qemu-kvm
+      #- virt-manager
+      #- virt-viewer
+      #- guestfs-tools
+      #- python3-libguestfs
+      #- virt-top
+      - corectrl
     remove:
       - firefox
       - firefox-langpacks

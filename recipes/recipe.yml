@@ -24,6 +24,7 @@ modules:
        - guestfs-tools
        - python3-libguestfs
        - virt-top
+       - corectrl
     remove:
        - firefox
        - firefox-langpacks

@@ -1,105 +1,87 @@
+---
 name: moe-os
 description: Moe's Persönliches uBlue Image
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 40
 modules:
-  # Default Repo Packages
   - type: rpm-ostree
-    repos:
+    repos: 
     install:
-       - steam-devices
-       - steam
-       - mesa-va-drivers-freeworld.i686
-       - mesa-vdpau-drivers-freeworld.i686
-       - mesa-vdpau-drivers-freeworld.x86_64
-       - ibm-plex-fonts-all
-       - mangohud
-       - waydroid
-       - virt-install
-       - libvirt-daemon-config-network
-       - libvirt-daemon-kvm
-       - qemu-kvm
-       - virt-manager
-       - virt-viewer
-       - guestfs-tools
-       - python3-libguestfs
-       - virt-top
-       - corectrl
+      - steam-devices
+      - steam
+      - mesa-va-drivers-freeworld.i686
+      - mesa-vdpau-drivers-freeworld.i686
+      - mesa-vdpau-drivers-freeworld.x86_64
+      - ibm-plex-fonts-all
+      - mangohud
+      - waydroid
+      - virt-install
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - qemu-kvm
+      - virt-manager
+      - virt-viewer
+      - guestfs-tools
+      - python3-libguestfs
+      - virt-top
+      - corectrl
     remove:
-       - firefox
-       - firefox-langpacks
-       - wireguard-tools
-       - nvtop
-       - solaar-udev
-       - openrgb-udev-rules
-       - oversteer-udev
-       - tcpdump
-       - tmux
-       - libratbag-ratbagd
-       - htop
-
-  # Customization
+      - firefox
+      - firefox-langpacks
+      - wireguard-tools
+      - nvtop
+      - solaar-udev
+      - openrgb-udev-rules
+      - oversteer-udev
+      - tcpdump
+      - tmux
+      - libratbag-ratbagd
+      - htop
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-%OS_VERSION%/hazel-bunny-ricing-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/luisbocanegra/kde-material-you-colors/repo/fedora-%OS_VERSION%/luisbocanegra-kde-material-you-colors-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/klassy/repo/fedora-%OS_VERSION%/errornointernet-klassy-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-%OS_VERSION%/hazel-bunny-ricing-fedora-%OS_VERSION%.repo
     install:
-       - klassy
-       - kde-material-you-colors
-       - python-materialyoucolor
-       - python-pywal
-       
-  # Gamescope Git
+      - klassy
+      - kde-material-you-colors
+      - python-materialyoucolor
+      - python-pywal
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/vulongm/gamescope-git/repo/fedora-%OS_VERSION%/vulongm-gamescope-git-fedora-%OS_VERSION%.repo
     install:
-       - gamescope
-       
-  # Gamescope Session
+      - gamescope
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
+      - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
     install:
-       - gamescope-session-plus
-       - gamescope-session-steam
-       
-  # Printer Driver
+      - gamescope-session-plus
+      - gamescope-session-steam
   - type: rpm-ostree
     repos:
-       - https://negativo17.org/repos/fedora-uld.repo
+      - https://negativo17.org/repos/fedora-uld.repo
     install:
-       - uld
-       
-    # Joystickwake   
+      - uld
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
     install:
-       - joystickwake
-       - ds-inhibit
-       
-  # AKmods for Controller Dongle Support
+      - joystickwake
+      - ds-inhibit
   - type: akmods
     base: main
     install:
-       - xone
-       - xpadneo
-
-  # Use the default flatpak module to setup repos. We want to install flatpaks manually
+      - xone
+      - xpadneo
   - type: default-flatpaks
-    system:  
+    system: null
     notify: true
     repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
     repo-name: flathub
-    repo-title: "Flathub (System)"
-    
-  # Add custom .desktop files to /usr/share/applications
+    repo-title: Flathub (System)
   - type: files
     files:
       - source: applications
         destination: /usr/share/applications
-      
-
   - type: signing

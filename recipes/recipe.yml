@@ -24,7 +24,6 @@ modules:
        - guestfs-tools
        - python3-libguestfs
        - virt-top
-       - https://github.com/ilya-zlobintsev/LACT/releases/download/v0.5.5/lact-libadwaita-0.5.5-0.x86_64.fedora-40.rpm
     remove:
        - firefox
        - firefox-langpacks

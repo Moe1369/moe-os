@@ -7,8 +7,8 @@ modules:
   - type: rpm-ostree
     repos: 
     install:
-      - steam
-      - steam-devices
+      #- steam
+      #- steam-devices
       - mesa-va-drivers-freeworld.i686
       - mesa-vdpau-drivers-freeworld.i686
       - mesa-vdpau-drivers-freeworld.x86_64
@@ -24,7 +24,7 @@ modules:
       - guestfs-tools
       - python3-libguestfs
       - virt-top
-      #- corectrl
+      - corectrl
     remove:
       - firefox
       - firefox-langpacks
@@ -56,8 +56,8 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-%OS_VERSION%/repo/fedora-%OS_VERSION%/gloriouseggroll-nobara-%OS_VERSION%-fedora-%OS_VERSION%.repo?arch=x86_64
     install:
-      - gamescope-session-plus
-      - gamescope-session-steam
+      #- gamescope-session-plus
+      #- gamescope-session-steam
   - type: rpm-ostree
     repos:
       - https://negativo17.org/repos/fedora-uld.repo

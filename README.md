@@ -5,6 +5,8 @@ For personal use based on [ublue-os Kinoite main Variant](https://github.com/ubl
 
 This is meant to somewhat emulate bazzite while keeping things "clean". Used as a daily driver for general usage and secondarily for couch gaming.
 
+Mirror on [gitea.chrayed.de](https://gitea.chrayed.de/moe1369/moe-os)
+
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
